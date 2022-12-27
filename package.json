@@ -4,9 +4,15 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "index.html"
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html --out-dir=build --public-url ./",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "parcel": "^2.8.2"
+  }
 }
