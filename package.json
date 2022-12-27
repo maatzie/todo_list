@@ -2,6 +2,7 @@
   "name": "project-start",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://maatzie.github.io/todo_list",
   "main": "app.js",
   "scripts": {
     "start": "parcel index.html --open",
